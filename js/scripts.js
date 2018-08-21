@@ -97,4 +97,11 @@ $(function () {
       $(this).text(userAccount.savingsAccount.total);
     })
   });
+  $("button#printChecking").click(function() {
+    $("#checkTransList").toggle();
+    $("ul#checkingUL").empty();
+    userAccount.checkingAccount.transactions.forEach(function(value) {
+      $("ul#checkingUL").append("<li>" + value + "</li>");
+    });
+  })
 });

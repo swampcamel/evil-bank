@@ -35,6 +35,11 @@
   box-shadow: -1px 20px 26px -12px rgba(0,0,0,0.75);
 }
 
+.transactions {
+  width: 35%;
+  display: none;
+}
+
 h1 {
   font-family: 'Vast Shadow', cursive;
   text-shadow: 2px 2px 3px #AEBF8E,
