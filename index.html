@@ -34,37 +34,42 @@
           <div class="accountInfo">
             <h2 id="userName"></h2>
             <h3 >Checking: <span id="checkingTotal"></span></h3>
-            <div class="divider"></div>
             <h3>Savings: <span id="savingsTotal"></span></h3>
           </div>
         </div>
         <div class="col s9">
  <!-- Checking -->
           <div class="row">
-            <div class="container">
+            <div class="container hideClass">
             <div class="row inner-row">
               <div class="col s6">
-                <h2>Checking Account</h2>
+                <h2>Checking</h2>
               </div>
               <div class="col s3">
-                <h3>Total: <span id="checkView"></span></h3>
+                <h3>Total: $<span id="checkView"></span></h3>
               </div>
               <div class="col s3">
                 Transactions Button
               </div>
             </div>
-            <div class="divider"></div>
             <div class="row inner-row">
               <form id="checkingInput">
                 <div class="col">
-                  <input class="with-gap" name="transactionType" type="radio"  />
-                  <span>Withdraw</span>
+                  <label>
+                    <input class="with-gap" name="checkTransType" type="radio" value="withdraw"  />
+                    <span>Withdraw</span>
+                  </label>
                 </div>
                 <div class="col">
-                  <input class="with-gap" name="transactionType" type="radio"  />
-                  <span>Deposit</span>
+                  <label>
+                    <input class="with-gap" name="checkTransType" type="radio"  value="deposit"/>
+                    <span>Deposit</span>
+                  </label>
                 </div>
-                <div class="col offset-s3">
+                <div class="col s2">
+                  <input type="number" id="checkTransAmount" placeholder="$0">
+                </div>
+                <div class="col offset-s2">
                   <button class="btn custom-btn dark-4 waves-effect waves-custom" type="submit">Make Transaction</button>
                 </div>
               </form>
@@ -73,30 +78,36 @@
         </div>
 <!--SAVINGS-->
           <div class="row">
-            <div class="container">
+            <div class="container hideClass">
             <div class="row inner-row">
               <div class="col s6">
-                <h2>Savings Account</h2>
+                <h2>Savings</h2>
               </div>
               <div class="col s3">
-                <h3>Total: <span id="savingsView"></span></h3>
+                <h3>Total: $<span id="savingsView"></span></h3>
               </div>
               <div class="col s3">
                 Transactions Button
               </div>
             </div>
-            <div class="divider"></div>
             <div class="row inner-row">
-              <form id="checkingInput">
+              <form id="savingsInput">
                 <div class="col">
-                  <input class="with-gap" name="transactionType" type="radio"  />
-                  <span>Withdraw</span>
+                  <label>
+                    <input class="with-gap" name="saveTransType" type="radio" value="withdraw" />
+                    <span>Withdraw</span>
+                  </label>
                 </div>
                 <div class="col">
-                  <input class="with-gap" name="transactionType" type="radio"  />
-                  <span>Deposit</span>
+                  <label>
+                    <input class="with-gap" name="saveTransType" type="radio" value="deposit" />
+                    <span>Deposit</span>
+                  </label>
                 </div>
-                <div class="col offset-s3">
+                <div class="col s2">
+                  <input type="number" id="saveTransAmount" placeholder="$0">
+                </div>
+                <div class="col offset-s2">
                   <button class="btn custom-btn dark-4 waves-effect waves-custom" type="submit">Make Transaction</button>
                 </div>
               </form>
