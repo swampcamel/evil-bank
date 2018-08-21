@@ -3,9 +3,9 @@
   background-color: #AEBF8E;
 }
 
-/* .hideClass {
+.hideClass {
   display: none;
-} */
+}
 
 .custom-btn {
   background-color: #4F8085;
@@ -23,6 +23,30 @@
   display: none;
 }
 
+.header{
+  color: #D1DBA9;
+  background-color: #0D4459;
+  padding: 3%;
+  margin-bottom: 2%;
+  border: #D1DBA9 solid 2px;
+  outline: #60785F solid 2px;
+  -webkit-box-shadow: -1px 20px 26px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 20px 26px -12px rgba(0,0,0,0.75);
+  box-shadow: -1px 20px 26px -12px rgba(0,0,0,0.75);
+}
+
+h1 {
+  font-family: 'Vast Shadow', cursive;
+  text-shadow: 2px 2px 3px #AEBF8E,
+              -1px -2px 4px #AEBF8E;
+}
+body, p, form, input, label, button, span {
+  font-family: 'Heebo', sans-serif;
+}
+
+h2, h3, h4, h5 ,h6 {
+  font-family: 'Playfair Display', serif;
+}
 h2 {
   font-size: 28px;
   line-height: 29px;
