@@ -1,0 +1,45 @@
+.col {
+  border: 2px solid #000;
+  background-color: yellow;
+}
+
+.custom-btn {
+  background-color: #60785F;
+}
+
+.custom-btn:hover, .custom-btn:active, .custom-btn:focus {
+  background-color: #AEBF8E;
+}
+
+.waves-effect.waves-custom .waves-ripple {
+  background-color: rgba(209, 209, 169, 0.65)
+}
+
+.accountInfo {
+  display: none;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 29px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 23px;
+}
+
+.master {
+  margin-top: 4%;
+}
+
+.master-row {
+    display: flex;
+    flex-wrap:wrap;
+
+}
+
+.inner-row {
+  margin: 5px;
+  padding: 3px;
+}

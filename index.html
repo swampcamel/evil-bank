@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Google Fonts API -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Source+Code+Pro" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <!-- jQuery 3.3.1 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="js/scripts.js"type="text/javascript"></script>
+    <title>Super Evil Bank Corp</title>
+  </head>
+  <body>
+    <div class="container master">
+      <div class="row master-row">
+<!--REGISTER-->
+        <div class="col s3">
+          <div class="registerField">
+            <form id="registerForm">
+              <div class="form-group">
+                <input type="text" id="nameInput" placeholder="Full Name">
+              </div>
+              <div class="form-group">
+                <input type="number" id="initialAmount" placeholder="Initial Deposit">
+              </div>
+              <button class="btn custom-btn darken-4 waves-effect waves-custom btn-large" type="submit">Register</button>
+            </form>
+          </div>
+          <div class="accountInfo">
+            <h2 id="userName"></h2>
+            <h3 >Checking: <span id="checkingTotal"></span></h3>
+            <div class="divider"></div>
+            <h3>Savings: <span id="savingsTotal"></span></h3>
+          </div>
+        </div>
+        <div class="col s9">
+ <!-- Checking -->
+          <div class="row">
+            <div class="container">
+            <div class="row inner-row">
+              <div class="col s6">
+                <h2>Checking Account</h2>
+              </div>
+              <div class="col s3">
+                <h3>Total: <span id="checkView"></span></h3>
+              </div>
+              <div class="col s3">
+                Transactions Button
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row inner-row">
+              <form id="checkingInput">
+                <div class="col">
+                  <input class="with-gap" name="transactionType" type="radio"  />
+                  <span>Withdraw</span>
+                </div>
+                <div class="col">
+                  <input class="with-gap" name="transactionType" type="radio"  />
+                  <span>Deposit</span>
+                </div>
+                <div class="col offset-s3">
+                  <button class="btn custom-btn dark-4 waves-effect waves-custom" type="submit">Make Transaction</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+<!--SAVINGS-->
+          <div class="row">
+            <div class="container">
+            <div class="row inner-row">
+              <div class="col s6">
+                <h2>Savings Account</h2>
+              </div>
+              <div class="col s3">
+                <h3>Total: <span id="savingsView"></span></h3>
+              </div>
+              <div class="col s3">
+                Transactions Button
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row inner-row">
+              <form id="checkingInput">
+                <div class="col">
+                  <input class="with-gap" name="transactionType" type="radio"  />
+                  <span>Withdraw</span>
+                </div>
+                <div class="col">
+                  <input class="with-gap" name="transactionType" type="radio"  />
+                  <span>Deposit</span>
+                </div>
+                <div class="col offset-s3">
+                  <button class="btn custom-btn dark-4 waves-effect waves-custom" type="submit">Make Transaction</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
